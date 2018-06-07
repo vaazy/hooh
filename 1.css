@@ -1,0 +1,75 @@
+/* Code tidied up by ScrapBook */
+#printArea { font-family: Arial,Helvetica; white-space: pre-wrap; }
+div.sasContainer { text-align: center; }
+table.sasTable { margin-left: auto; margin-right: auto; text-align: left; width: 90%; border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; }
+table.sasTable tr.altRow { background-color: rgb(239, 239, 239); }
+table.sasTable th, table.sasTable td { padding: 5px 10px; border: 1px solid rgb(153, 153, 153); }
+table.sasTable th.sinkHeader { border: medium none; width: 50%; }
+table.sasTable th.singleAppHeader { width: 50%; }
+table.sasTable th.jointAppHeader { width: 25%; }
+table.sasTable ul.providerList { margin-left: 0px; padding-left: 15px; margin-top: 5px; margin-bottom: 0px; }
+table.checkList { width: 100%; border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; }
+table.checkList th, table.checkList td { padding: 3px 5px; border: 1px solid rgb(153, 153, 153); }
+table.checkList th { font-size: 11px; }
+div.checkListRow { margin-top: 5px; font-family: Arial,sans-serif; font-size: 12px; }
+div.checkListCtrl { position: absolute; }
+div.checkListDesc { padding-left: 25px; }
+div.actionContainer { text-align: center; }
+input.dmsActionBtn, input.dmsActionBtnOn { width: 100px; margin: 0px 10px; padding: 5px 10px; background-color: rgb(239, 239, 239); border-color: rgb(204, 204, 204) rgb(102, 102, 102) rgb(102, 102, 102) rgb(204, 204, 204); border-width: 1px; border-style: solid; font-family: Arial,sans-serif; font-size: 12px; }
+input.dmsActionBtnOn { background-color: rgb(153, 204, 153); font-weight: bold; }
+table.eidvTable { border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; }
+table.eidvTable th, table.eidvTable td { padding: 5px 10px; border: 1px solid rgb(153, 153, 153); }
+table.eidvTable th { font-size: 11px; }
+table.eidvTable td { vertical-align: top; }
+table.istOfacTable { border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; margin-bottom: 10px; }
+table.istOfacTable th, table.istOfacTable td { padding: 5px 10px; border: 1px solid rgb(153, 153, 153); }
+table.istOfacTable td { vertical-align: top; }
+table.qualifileTable { border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; margin-bottom: 10px; width: 90%; }
+table.qualifileTable th, table.qualifileTable td { padding: 5px 10px; border: 1px solid rgb(153, 153, 153); }
+table.qualifileTable td { vertical-align: top; }
+table.subQualifileTable { border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; }
+table.subQualifileTable th, table.subQualifileTable td { padding: 5px 10px; border: medium none; }
+table.subQualifileTable td { vertical-align: top; }
+.ssnIndicator { font-size: 11px; font-weight: normal; margin-left: 6px; }
+table.acctHistoryTable { border-collapse: collapse; font-family: Arial,sans-serif; font-size: 12px; width: 97%; }
+table.acctHistoryTable td { padding: 5px 10px; color: rgb(0, 0, 0); border: 1px solid rgb(153, 153, 153); vertical-align: top; }
+table.acctHistoryTable td.checkHeading { font-size: 14px; font-weight: bold; background-color: rgb(223, 223, 223); }
+table.acctHistoryTable td.errorInfo { font-size: 14px; font-weight: bold; background-color: rgb(255, 255, 239); }
+table.subAcctHistoryTable { border-collapse: collapse; font-family: Arial,sans-serif; font-size: 11px; margin-top: 5px; margin-bottom: 10px; width: 100%; }
+table.subAcctHistoryTable td { padding: 1px 3px; color: rgb(51, 51, 51); border: 1px solid rgb(153, 153, 153); vertical-align: top; }
+table.acctHistoryTable td.fieldLabel { font-weight: bold; background-color: rgb(239, 239, 239); }
+table.acctHistoryTable td.fieldValue { background-color: rgb(255, 255, 255); }
+table.acctHistoryTable td.errorField { font-weight: bold; color: red; background-color: rgb(255, 255, 255); }
+.bottomNavBG { background-image: url("bg_nav_bot.gif"); background-repeat: repeat-x; }
+.siteShadowBG { background-image: url("bg_siteshadow.gif"); background-repeat: repeat-y; }
+td.interiorSiteBG { background-image: url("bg_interior.gif"); background-repeat: no-repeat; }
+table.submissionHistoryData h2 { margin-bottom: 2px; border: medium none; }
+table.submissionHistoryData th, table.matchData th { font-family: Arial; font-size: 12px; font-weight: bold; text-align: left; color: rgb(51, 51, 51); padding: 3px; border-bottom: medium double rgb(212, 208, 200); }
+table.matchData th { background-color: rgb(239, 239, 239); }
+table.submissionHistoryData { margin-top: 25px; }
+table.submissionHistoryData td { font-family: Arial; font-size: 12px; font-weight: normal; text-align: left; color: rgb(51, 51, 51); padding: 3px; }
+table.matchData td { font-family: Arial; font-size: 12px; font-weight: normal; text-align: left; color: rgb(17, 17, 17); border-bottom: 1px solid rgb(212, 208, 200); border-left: 1px solid rgb(212, 208, 200); padding: 3px; }
+table.submissionHistoryData td.noLine, table.matchData td.noLine { border: medium none; }
+table.submissionHistoryData td.noLineHeading { border: medium none; }
+.reportHeader { font-family: Arial; font-size: 24px; font-weight: bold; text-align: left; padding-left: 10px; color: rgb(51, 102, 153); }
+#provider-message {  }
+#provider-reportdate {  }
+#provider-contact .row { margin: 0px 0px 5px; }
+#provider-contact .lbl, #provider-contact .value { float: left; font: 12px Arial; }
+#provider-contact .lbl { width: 100px; text-align: right; font-weight: bold; }
+#provider-contact .value { margin: 0px 0px 0px 20px; }
+.clear { clear: both; }
+td.fraudReportHeader { color: white; font-family: Arial; font-size: 28px; font-weight: bold; padding-left: 10px; text-align: left; }
+div.fraudSectionContainer { width: 700px; margin: 10px; }
+div.fraudTopHeader { background-color: rgb(138, 142, 173); color: black; font: bold 14px Arial; padding: 10px; margin: 0px; }
+div.fraudSubHeader { background-color: rgb(172, 176, 196); border-width: 1px 0px 0px 1px; border-style: solid none none solid; border-color: white currentcolor currentcolor white; padding: 5px; margin: 0px 0px 0px 15px; position: relative; top: -2px; }
+div.fraudDetails { border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentcolor rgb(172, 176, 196) rgb(172, 176, 196); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; padding: 5px 0px; margin: 0px 0px 0px 30px; position: relative; top: -2px; }
+p.fraudReasonsTitle { font: 14px Arial; text-decoration: underline; margin: 0px; padding: 0px; }
+p.fraudReasonsDetails { font: 14px Arial; margin: 0px; padding: 0px 0px 0px 100px; }
+table.fraudSubHeaderTable { width: 674px; padding: 0px; margin: 0px; }
+table.fraudSubHeaderTable td { color: black; font: 14px Arial; width: 50%; padding: 0px; margin: 0px; }
+table.fraudDetailsTable { width: 668px; border-collapse: collapse; border-spacing: 0px; }
+table.fraudDetailsTable td { color: black; font: 14px Arial; padding: 5px; margin: 0px; }
+table.fraudDetailsTable td.fraudDetailsTableleftRow { width: 375px; }
+table.fraudDetailsTable td.fraudDetailsTablerightRow { width: 325px; }
+tr.fraudTableRowBackgroundColorAlt { background-color: rgb(227, 228, 234); }

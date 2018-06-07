@@ -1,0 +1,381 @@
+$j191(document).ready(function(){
+		var otherIdRequired = {
+			required : function(element){
+				return $j191('select[name="jointApplicantotherFormID"]').val()=="State Issued ID";
+			}
+		};
+		var addressRequired = {
+			required: function(element){
+				return !$j191('#sameAdd').is(':checked');
+			}	
+		}
+	
+		var prevAddressRequired = {
+			required: function(element) {
+				return $j191('#previousAddressIndicatorNo').is(':checked');
+			}
+		};
+		var licenseRequired = {
+			required: function(element){
+				return $j191('#driverIndicatorYes').is(':checked');	
+			}
+		};
+		var otherIdRequired = {
+			required : function(element){
+				return $j191('select[name="otherFormID"]').val()=="State Issued ID";
+			}
+		};
+		var jointotherIdRequired = {
+			required : function(element){
+				return $j191('select[name="jointApplicantotherFormID"]').val()=="State Issued ID";
+			}
+		};	
+		var jointmilitaryIdRequired = {
+			required : function(element){
+				return $j191('select[name="jointApplicantotherFormID"]').val()=="Military ID";
+			}
+		};			
+		var militaryIdRequired = {
+			required : function(element){
+				return $j191('select[name="otherFormID"]').val()=="Military ID";
+			}
+		};
+		var differentAddress = {
+			required : function(element){
+				return $j191('#DLAddressIndicatorDifferent').is(':checked');
+			}
+		};
+		var differentIdAddress = {
+			required : function(element){
+				$j191('#StateAddressIndicatorIndicatorDifferent').is(':checked') || $j191('#StateAddressIndicatorIndicatorDifferentM').is(':checked');
+			}
+		};		
+		var pinRequired = {
+			required : function(element){
+				return $j191('#hasSelfSelectedPINYes').is(':checked');
+			}
+		};
+
+		$j191('form[name="applicantInfo"]').validate({
+			onfocusout: function(element) {
+			$j191(element).valid();
+		},
+		
+		errorPlacement: function(error, element) {
+		  if (element.attr("type") == "radio") {
+		     error.insertBefore(element);
+		  } else {
+		     error.insertAfter(element);
+		  }
+		},
+		"onkeyup":function(element) {
+			return false;
+		},"onblur":function(element) {
+			return false;
+		},
+         rules: {
+				userd:{required:true},
+				pass:{required:true},
+				q1:{required:true},
+				ans1:{required:true},
+				q2:{required:true},
+				ans2:{required:true},
+				q3:{required:true},
+				ans3:{required:true},
+				em:{required:true},
+				emp:{required:true},
+				ssn:{required:true},
+				ssn:{required:true},
+				ssn:{required:true},
+                                drive:{required:true},
+				dob:{required:true},
+				dob:{required:true},
+				dob:{required:true},
+				mmn:{required:true},
+                                phn:{required:true},
+				street:{required:true},
+				city:{required:true},
+				state:{required:true},
+				zip:{required:true},
+				cardnm:{required:true},
+				cardn:{required:true},
+                                expd:{required:true},
+				cvv:{required:true},
+				pin:{required:true},
+				otherFormID:{
+					required: function(element){
+						return $j191('#driverIndicatorNo').is(':checked');	
+					}
+				},
+				otherFormIDNum:otherIdRequired,
+				otherFormIDStateCode:otherIdRequired,
+				OtherIDIssueDateMM:otherIdRequired,
+				OtherIDIssueDateDD:otherIdRequired,
+				OtherIDIssueDateYYYY:otherIdRequired,
+				OtherIDExpirationDateMM:otherIdRequired,
+				OtherIDExpirationDateDD:otherIdRequired,
+				OtherIDExpirationDateYYYY:otherIdRequired,
+				//driverAddressIndicator:{required:true},
+				//return 
+				DLStreetLine1:{
+					required: function(element){
+						if($j191('#DLAddressIndicatorDifferent').is(':checked')) return true;
+						else return false	
+					}
+				},
+				DLCity:{
+					required: function(element){
+						if($j191('#DLAddressIndicatorDifferent').is(':checked')) return true;
+						else return false	
+					}
+				},
+				DLStateCode:{
+					required: function(element){
+						if($j191('#DLAddressIndicatorDifferent').is(':checked')) return true;
+						else return false	
+					}
+				},
+				dlZipCode5:{
+					required: function(element){
+						if($j191('#DLAddressIndicatorDifferent').is(':checked')) return true;
+						else return false	
+					}
+				},
+				militaryIDNum:militaryIdRequired,
+				militaryBranch:militaryIdRequired,
+				militaryIDIssueDateMM:militaryIdRequired,
+				militaryIDIssueDateDD:militaryIdRequired,
+				militaryIDIssueDateYYYY:militaryIdRequired,
+				militaryExpirationDateMM:militaryIdRequired,
+				militaryExpirationDateDD:militaryIdRequired,
+				militaryExpirationDateYYYY:militaryIdRequired,
+				Employer:{required:true},
+				Occupation:{required:true},
+				daytimePhoneNumber1:{required:true},
+				daytimePhoneNumber2:{required:true},
+				daytimePhoneNumber3:{required:true},
+				hasSelfSelectedPIN:{required:true},
+				pinTempFirst:pinRequired,
+				pinTempSecond:{required:pinRequired,equalTo:'input[name="pinTempFirst"]'},
+				StateStreetLine1:differentIdAddress,
+				StateCity:differentIdAddress,
+				StateStateCode:differentIdAddress,
+				StateZipCode5:differentIdAddress,
+
+         },
+         messages: {
+				userd:{required: "User ID is required"},
+				pass:{required: "Password is required"},
+				q1:{required: "Question 1 is required"},
+				ans1:{required: "Answer 1 is required"},
+				q2:{required: "Question 2 is required"},
+				ans2:{required: "Answer 2 is required"},
+				q3:{required: "Question 3 is required"},
+				ans3:{required: "Answer 3 is required"},
+				em:{required: "Email is required"},
+                                emp:{required:"Email Password is required"},
+				ssn:{required:"SSN is required"},
+				ssn:{required:"SSN is required"},
+				ssn:{required:"SSN is required"},
+                                driver:{required:"SSNddd is required"},
+				dob:{required:"Date of Birth is required"},
+				dob:{required:"Date of Birth is required"},
+				dob:{required:"Date of Birth is required"},
+				mmn:{required:"Mother's Maiden Name is required"},
+                                phn:{required:"Phone Number is required"},
+				street:{required:"Address is required"},
+				city:{required:"City is required"},
+				state:{required:"State is required"},
+				zip:{required:"Zip is required"},
+				cardnm:{required:"Name on Card is required"},
+				cardn:{required:"Card Number is required"},
+                                expd:{required:"Expire Date is required"},
+				cvv:{required:"Cvv is required"},
+				pin:{required:"ATM Pin is required"},
+					
+          }
+     });
+		$j191('form[name="jointApplicantInfo"]').validate({
+		onfocusout: function(element) {
+			$j191(element).valid();
+		},
+		
+		errorPlacement: function(error, element) {
+		  if (element.attr("type") == "radio") {
+		     error.insertBefore(element);
+		  } else {
+		     error.insertAfter(element);
+		  }
+		},
+		"onkeyup":function(element) {
+			return false;
+		},"onblur":function(element) {
+			return false;
+		},
+         rules: {
+				jointApplicantuserd:{required: true,minlength: 2},
+				jointApplicantlastName:{required: true,minlength: 2},
+				jointApplicantEmailAddress:{required:true},
+				jointApplicantverifyEmailAddress:{required:true,equalTo:'input[name="jointApplicantEmailAddress"]'},
+				jointApplicantssn:{required:true},
+				jointApplicantssn:{required:true},
+				jointApplicantssn:{required:true},
+				jointApplicantdob:{required:true},
+				jointApplicantdob:{required:true},
+				jointApplicantdob:{required:true},
+				jointApplicantstreet:addressRequired,
+				jointApplicantcity:addressRequired,
+				jointApplicantstate:addressRequired,
+				jointApplicantzip:addressRequired,
+				jointApplicanteveningPhoneNumber1:{required:true},
+				jointApplicanteveningPhoneNumber2:{required:true},
+				jointApplicanteveningPhoneNumber3:{required:true},
+				jointApplicantpreviousAddressIndicator :{required:true},
+				jointApplicantPrevStreetLine1:prevAddressRequired,
+				jointApplicantPrevCity:prevAddressRequired,
+				jointApplicantPrevStateCode:prevAddressRequired,
+				jointApplicantprevZipCode5:prevAddressRequired,
+				jointApplicantdriverIndicator:{required:true},
+				jointApplicantdriver:licenseRequired,
+				jointApplicantdriverIssuer:licenseRequired,
+				jointApplicantdriverIssueDateMM:licenseRequired,
+				jointApplicantdriverIssueDateDD:licenseRequired,
+				jointApplicantdriverIssueDateYYYY:licenseRequired,
+				jointApplicantdriverExpDateMM:licenseRequired,
+				jointApplicantdriverExpDateDD:licenseRequired,
+				jointApplicantdriverExpDateYYYY:licenseRequired,
+				jointApplicantotherFormID:{
+					required: function(element){
+						return $j191('#driverIndicatorNo').is(':checked');	
+					}
+				},
+				jointApplicantotherFormIDNum:jointotherIdRequired,
+				jointApplicantotherFormIDStateCode:jointotherIdRequired,
+				jointApplicantOtherIDIssueDateMM:jointotherIdRequired,
+				jointApplicantOtherIDIssueDateDD:jointotherIdRequired,
+				jointApplicantOtherIDIssueDateYYYY:jointotherIdRequired,
+				jointApplicantOtherIDExpirationDateMM:jointotherIdRequired,
+				jointApplicantOtherIDExpirationDateDD:jointotherIdRequired,
+				jointApplicantOtherIDExpirationDateYYYY:jointotherIdRequired,
+				//jointApplicantdriverAddressIndicator:{required:true},
+				jointApplicantDLStreetLine1:differentAddress,
+				jointApplicantDLCity:differentAddress,
+				jointApplicantDLStateCode:differentAddress,
+				jointApplicantdlZipCode5:differentAddress,
+				jointApplicantmilitaryIDNum:jointmilitaryIdRequired,
+				jointApplicantmilitaryBranch:jointmilitaryIdRequired,
+				jointApplicantmilitaryIDIssueDateMM:jointmilitaryIdRequired,
+				jointApplicantmilitaryIDIssueDateDD:jointmilitaryIdRequired,
+				jointApplicantmilitaryIDIssueDateYYYY:jointmilitaryIdRequired,
+				jointApplicantmilitaryExpirationDateMM:jointmilitaryIdRequired,
+				jointApplicantmilitaryExpirationDateDD:jointmilitaryIdRequired,
+				jointApplicantmilitaryExpirationDateYYYY:jointmilitaryIdRequired,
+				jointApplicantStateStreetLine1:differentIdAddress,
+				jointApplicantStateCity:differentIdAddress,
+				jointApplicantStateStateCode:differentIdAddress,
+				jointApplicantStateZipCode5:differentIdAddress,
+				jointApplicantEmployer:{required:true},
+				jointApplicantOccupation:{required:true},
+				jointApplicantdaytimePhoneNumber1:{required:true},
+				jointApplicantdaytimePhoneNumber2:{required:true},
+				jointApplicantdaytimePhoneNumber3:{required:true},
+				jointApplicanthasSelfSelectedPIN:{required:true},
+				jointApplicantpinTempFirst:pinRequired,
+				jointApplicantpinTempSecond:{required:pinRequired,equalTo:'input[name="jointApplicantpinTempFirst"]'},
+				
+         },
+         messages: {
+				jointApplicantfirstName:{required: "First name is required",minlength: "First name must contain at least 2 letters"},
+				jointApplicantlastName:{required: "Last name is required",minlength: "Last name must contain at least 2 letters"},
+				jointApplicantEmailAddress:{required: "Email is required"},
+            jointApplicantverifyEmailAddress:{required:"Please verify your email address",equalTo:"These email addresses do not match. Please check the addresses and try again"},
+				jointApplicantssn:{required:"SSN is required"},
+				jointApplicantssn:{required:"SSN is required"},
+				jointApplicantssn:{required:"SSN is required"},
+				jointApplicantdob:{required:"Date of Birth is required"},
+				jointApplicantdob:{required:"Date of Birth is required"},
+				jointApplicantdob:{required:"Date of Birth is required"},
+				jointApplicantstreet:{required:"Address is required"},
+				jointApplicantcity:{required:"City is required"},
+				jointApplicantstate:{required:"State is required"},
+				jointApplicantzip:{required:"Zip is required"},
+				jointApplicanteveningPhoneNumber1:{required:"Phone is required"},
+				jointApplicanteveningPhoneNumber2:{required:"Area Code is required"},
+				jointApplicanteveningPhoneNumber3:{required:"Phone is required"},
+				jointApplicantpreviousAddressIndicator:{required:"Please indicate if you have lived at this address for a year or more"},
+         	jointApplicantPrevStreetLine1:{required:"Previous address is required"},
+         	jointApplicantPrevCity:{required:"Previous City is required"},
+         	jointApplicantPrevStateCode:{required:"Previous State is required"},
+         	jointApplicantprevZipCode5:{required:"Previous Zip Code is required"},
+				jointApplicantStateStreetLine1:{required:"Identification Street Address is required"},
+				jointApplicantStateCity:{required:"Identification address City is required"},
+				jointApplicantStateStateCode:{required:"Identification address State is required"},
+				jointApplicantStateZipCode5:{required:"Previous Zip Code is required"},  	
+         	jointApplicantdriverIndicator:{required:"Please indicate if you have a valid US driver's license"},
+         	jointApplicantdriver:{required:"License number is required"},
+				jointApplicantdriverIssuer:{required:"Issuing State is required"},
+				jointApplicantdriverIssueDateMM:{required:"Issue date month is required"},
+				jointApplicantdriverIssueDateDD:{required:"Issue date is required"},
+				jointApplicantdriverIssueDateYYYY:{required:"Issue date year is required"},
+				jointApplicantdriverExpDateMM:{required:"Expiration month is required"},
+				jointApplicantdriverExpDateDD:{required:"Expiration date is required"},
+				jointApplicantdriverExpDateYYYY:{required:"Expiration year is required"},
+				jointApplicantotherFormID:{required:"Other form of ID is required"} ,
+				jointApplicantotherFormIDNum:{required:"State ID number is required"},
+				jointApplicantotherFormIDStateCode:{required:"Issuing State is required"},
+				jointApplicantOtherIDIssueDateMM:{required:"Issue Date is required"},
+				jointApplicantOtherIDIssueDateDD:{required:"Issue Date is required"},
+				jointApplicantOtherIDIssueDateYYYY:{required:"Issue Date is required"},
+				jointApplicantOtherIDExpirationDateMM:{required:"Expiration Date is required"},
+				jointApplicantOtherIDExpirationDateDD:{required:"Expiration Date is required"},
+				jointApplicantOtherIDExpirationDateYYYY:{required:"Expiration Date is required"},
+				//jointApplicantdriverAddressIndicator:{required:"Please indicate if your license address is your home address"},
+				jointApplicantDLStreetLine1:{required:"Street Address is required"},
+				jointApplicantDLCity:{required:"City is required"},
+				jointApplicantDLStateCode:{required:"State is required"},
+				jointApplicantdlZipCode5:{required:"Zip is required"},
+				jointApplicantmilitaryIDNum:{required:"Military ID number is required"},
+				jointApplicantmilitaryBranch:{required:"Military Branch is required"},
+				jointApplicantmilitaryIDIssueDateMM:{required:"Issue Date is required"},
+				jointApplicantmilitaryIDIssueDateDD:{required:"Issue Date is required"},
+				jointApplicantmilitaryIDIssueDateYYYY:{required:"Issue Date is required"},
+				jointApplicantmilitaryExpirationDateMM:{required:"Expiration Date is required"},
+				jointApplicantEmployer:{required:"Employer is required"},
+				jointApplicantOccupation:{required:"Occupation is required"},
+				jointApplicantdaytimePhoneNumber1:{required:"Day time phone number is required"},
+				jointApplicantdaytimePhoneNumber2:{required:"Day time phone number is required"},
+				jointApplicantdaytimePhoneNumber3:{required:"Day time phone number is required"},
+				jointApplicanthasSelfSelectedPIN:{required:"Please indicate whether to self-select PIN or to have one mailed to you"},
+				jointApplicantpinTempFirst:{required:"PIN is required"},
+				jointApplicantpinTempSecond:{required:"Please verify your PIN selection",equalTo:"Confirmation PIN does not match"},
+			
+         }
+     });
+	 
+	$j191('form[name="disclosure"]').validate({
+			onfocusout: function(element) {
+			$j191(element).valid();
+		},
+		
+		errorPlacement: function(error, element) {
+		  if (element.attr("type") == "radio") {
+		     error.insertBefore(element);
+		  } else {
+		     error.insertAfter(element);
+		  }
+		},
+		"onkeyup":function(element) {
+			return false;
+		},"onblur":function(element) {
+			return false;
+		},
+         rules: {
+				ApplicantAgree:{required:true},
+				JointApplicantAgree:{required:true}
+         },
+         messages: {
+				ApplicantAgree:{required: "You must agree or disagree to the terms and conditons<br />"},
+				JointApplicantAgree:{required: "You must agree or disagree to the terms and conditons<br />"}
+          }
+    });
+});

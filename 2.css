@@ -1,0 +1,7 @@
+/* Code tidied up by ScrapBook */
+@font-face {
+  font-family: "PNC Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("pncsans-regular-webfont.eot") format("embedded-opentype"), url("pncsans-regular-webfont.woff") format("woff"), url("pncsans-regular-webfont.ttf") format("truetype"), url("pncsans-regular-webfont.svg") format("svg");
+}

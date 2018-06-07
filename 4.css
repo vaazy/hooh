@@ -1,0 +1,220 @@
+/* Code tidied up by ScrapBook */
+.accountInfoAttributeValue { padding-left: 15px !important; }
+.accountInfoAttribute { padding-left: 15px !important; float: left; }
+.AND_hdr { font-weight: 700; margin: 8px 0px 0px; }
+.AND_hdr { font-weight: 700; margin: 8px 0px 0px; }
+.AND_agreeCtr { position: relative; top: -30px; margin-bottom: 10px; }
+.yui-panel-container.yui-dialog, #SessionExpirationWarning, #SessionExpirationWarning_c { width: 250px !important; }
+* { }
+
+.loader-rt, .tools-container { display: none; }
+#centerer, .parent-container, body, html { margin: 0px; padding: 0px; overflow-x: hidden; }
+.accountFeatures { padding-right: 15px; }
+hr { margin: 0px; border-top: 1px solid rgb(0, 0, 0); }
+hr.thinGray { border: 0px none; height: 1px; background-color: rgb(229, 229, 229); background-repeat: repeat; background-attachment: scroll; background-clip: border-box; background-origin: padding-box; background-position: 0% 0%; background-size: auto auto; background-image: linear-gradient(to right, rgb(229, 229, 229), rgb(229, 229, 229), rgb(229, 229, 229)) !important; margin-top: 7px; margin-bottom: 7px; }
+.h3, h3 { font-size: 1em; font-weight: 700; margin-top: 4px; }
+.conditionalMessage ul, .emailConfirmationContainer ul, .fundingSummaryContainer ul { padding-left: 0px; list-style-position: inside; }
+.emailConfirmationContainer { margin-bottom: 0px; }
+.AND_row { display: block; }
+.openedAccountFunding { display: none; }
+.editBtn { background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px !important; border: medium none; padding: 0px !important; left: 33%; top: -19px; font-size: 15px; font-weight: 500; }
+.h1, h2, label { font-weight: 700; }
+h1 { font-weight: 400; }
+.verificationLabel b { font-weight: 100; line-height: 24px; font-family: Arial; }
+.AND_disclosure { border: medium none; padding: 8px; position: relative; }
+.AND_selectProduct, .AND_disclosure.required, .AND_disclosure:first-child { background-color: rgb(251, 249, 250); border: 1px solid rgb(223, 222, 222); padding: 8px; position: relative; cursor: pointer; }
+.AND_showDescOnSelect { background-color: rgb(251, 249, 250); border: 1px solid rgb(223, 222, 222); padding: 8px; position: relative; }
+.AND_disclosure.error { border: 1px solid rgb(229, 63, 70); }
+.AND_disclosure.error b { color: rgb(229, 63, 70); }
+.AND_disclosure p { margin: 14px 5px; }
+.AND_selectProduct.selectedProduct, .AND_showDescOnSelect.selectedProduct { background-color: rgb(218, 234, 248); }
+.market-logo { text-align: center; }
+.security-assurance { display: inline; margin-right: 16px; margin-top: 14px; float: right; }
+.help-flyout-links { display: none; }
+.help-flyout { font-family: "PNC Sans"; color: rgb(120, 120, 120) !important; text-decoration: none; width: 57px; background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgb(255, 255, 255) 0px, rgb(244, 244, 244) 100%) repeat scroll 0% 0%; padding: 10px; border: 1px solid rgb(204, 204, 204); margin-right: 0px; display: inline; float: left; position: relative; left: 3%; top: 10px; text-align: left; }
+.help-flyout-links { display: inline; position: absolute; left: 0px; width: 275px; background-color: white; padding: 15px; font-family: "PNC Sans"; color: black; z-index: 1; box-shadow: 0px 2px 18px -4px rgb(120, 120, 120); }
+.help-flyout b { font-weight: 100; text-align: left; text-transform: none; }
+.help-flyout a { font: 14px / 16px Arial, sans-serif; color: rgb(244, 128, 36); }
+.help-flyout a:hover { color: rgb(244, 128, 36); }
+#body-container { float: left; }
+.h1, h1 { font-size: 1.5em; width: 96%; }
+.step { display: inline-block; margin-right: -4px; height: 16px; margin-top: 20px; font-size: 11px; background: rgb(221, 221, 221) none repeat scroll 0% 0%; border-left: 2px solid white; width: 20%; }
+.step.done, .step.on { background-color: #106492; }
+.step p { font-size: 11px; top: -18px; display: none; color: rgb(133, 133, 133); }
+.AND_checkLabel, .hint { display: inline; }
+.AND_checkLabel, .radioLabel { font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); opacity: 1; }
+.radioLabel { font-weight: 100; }
+body { color: rgb(51, 51, 51); padding: 20px; backface-visibility: hidden; }
+.hint { font-size: 9px; position: absolute; top: 42.5px; left: 26px; color: rgb(153, 153, 153); }
+.AND_radio, p { display: block; }
+.field-wrapper { position: relative; margin-bottom: 20px; }
+label { top: -13px; left: 0px; font-size: 11px; color: rgb(0, 105, 170); transition: all 0.1s linear 0s; opacity: 0; }
+label[for="homeAddress"], label[for="altAddress"] { opacity: 1; }
+label.show { top: -15px; opacity: 1; }
+label#previousAddressIndicator-error { }
+option { color: rgb(0, 0, 0); }
+.watermark { color: rgb(170, 170, 170); }
+*::-moz-placeholder { color: rgb(91, 91, 91); font-size: 12px; }
+.h2, h2 { font-size: 1.25em; font-family: "PNC Sans"; }
+input[type="text"], select, input[type="password"], input[type="tel"] { font-family: Arial; margin-bottom: 0.75em; padding: 0.5em 0.6em 12px; border: 1px solid rgb(217, 217, 217); background-color: rgb(251, 251, 251); box-sizing: border-box; width: 95%; height: 38px; }
+input[name="expirationMonth"], input[name="expirationYear"] { width: 14.5%; }
+input[name="creditCardZipCode5"], input[name="creditCardZipCode4"] { width: 41%; }
+input[type="radio"] { width: auto; margin-right: 2px; }
+div#stateRequiredField { display: none; }
+div#postalCodeRequiredField { display: none; }
+select[name="creditCardMailingCountry"] { display: block; }
+input:disabled, select:disabled { background-color: rgb(244, 244, 244); }
+.content-container { margin-left: 15px; }
+.AND_hiddenDetails { padding-right: 4%; color: rgb(86, 86, 86); }
+#submitNext, .btn-bl, .btn-finish, .btn-lt a { display: inline; padding: 8px 15px !important; font: 700 11px / 12px Arial, sans-serif; }
+#submitNext, .btn-bl { color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(38, 163, 212) 0px, rgb(0, 128, 188) 50%, rgb(0, 96, 162) 100%) repeat scroll 0% 0%; border: 1px solid rgb(73, 172, 218); margin: -5px 15px 0px 0px; }
+.btn-bl a { color: rgb(255, 255, 255); }
+#submitNext:hover, .btn-bl:hover { background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(26, 196, 242) 0px, rgb(8, 77, 121) 100%) repeat scroll 0% 0%; border: 1px solid rgb(75, 180, 224); }
+.btn-finish, .btn-lt a { margin-right: 10px; color: rgb(72, 72, 72); background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(249, 249, 249) 0px, rgb(253, 253, 253) 3%, rgb(248, 248, 248) 6%, rgb(239, 239, 239) 34%, rgb(209, 209, 209) 91%, rgb(189, 189, 189) 94%, rgb(180, 180, 180) 97%, rgb(229, 229, 229) 100%) repeat scroll 0% 0%; border: 1px solid rgb(238, 238, 238); }
+.btn-finish:hover, .btn-lt a:hover { background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, rgb(255, 255, 255) 0px, rgb(247, 247, 247) 100%) repeat scroll 0% 0%; border: 1px solid rgb(221,
+.progress-container, .progress-container-sa { padding-right: 15px; padding-left: 15px; }
+.AND_detailToggle, .AND_discToggle { display: inline; padding-right: 15px; font-weight: 700; font-size: 11px; }
+span.AND_detailToggle, span.AND_discToggle { float: right; clear: both; }
+select { font-size: 11px; color: rgb(91, 91, 91); height: 36px; -moz-appearance: none; }
+select.watermark { color: rgb(91, 91, 91); font-size: 12px; }
+.tablerow label { top: -13px; left: 0px; font-size: 12px; color: rgb(91, 91, 91); opacity: 1; text-align: left; }
+.footer { padding: 0px 0px 25px; background-color: rgb(35, 42, 48); width: 100%; min-height: 200px; }
+.footer .ftr-top-bar { background: none 0% 0% repeat scroll #0F608B; height: 10px; }
+.footer .footer-copyright p { color: rgb(108, 125, 136); font-size: 11px; text-align: center; }
+.footer .footer-sub a { color: rgb(255, 255, 255); font-size: 11px; display: inline; }
+.footer .footer-sub, .footer .footer-copyright { overflow: hidden; }
+.footer .footer-sub { margin-top: 25px; text-align: center; }
+.footer-sub li { padding: 0px 5px 8px 0px; margin: 0px 5px 0px 0px; list-style: outside none none; display: inline; }
+.footer-sub .last-li { border: 0px none !important; margin: 0px; padding: 0px; }
+span.AND_min { font-size: 11px; font-weight: 400; }
+form[name="verifyMicroDeposit"] table { margin-bottom: 15px; }
+label { display: block; }
+select#creditCardStateCode { background-position: 98% center; }
+@media only screen and (max-width: 450px) {
+  span.AND_min { float: right; clear: both; padding-right: 15px; }
+  .logoWrapper { width: 100%; }
+}
+@media only screen and (min-width: 430px) {
+  .AND_detailToggle, .AND_discToggle { float: right; clear: both; }
+  td.account { width: 42%; }
+  span.AND_min { float: right; clear: both; padding-right: 15px; }
+  .logoWrapper { width: 100%; }
+}
+@media only screen and (min-width: 527px) {
+  td#totalInitialDeposit { position: relative; right: 26%; }
+  .logoWrapper { width: 100%; }
+}
+@media only screen and (min-width: 720px) {
+  #header-container { width: 100%; min-width: 720px; }
+  .pnc-progress { width: 95%; }
+  .progress-container, .progress-container-sa { padding: 0px; }
+  td#totalInitialDeposit { right: 46%; }
+  .logoWrapper { width: 100%; }
+}
+@media only screen and (min-width: 768px) {
+  .h1, h1 { font-size: 1.5em; width: 98%; }
+  input#sameAdd { display: inline-block; }
+  a#cancel-link { display: inline; margin: 0px; }
+  .AND_selectProduct p, .AND_showDescOnSelect p { display: inline-block; text-indent: 18px; }
+  .footer .footer-sub, .footer .footer-copyright { overflow: hidden; padding-left: 25px; }
+  label { display: inline-block; }
+  .logoWrapper { width: 100%; }
+}
+@media only screen and (min-width: 768px) {
+  .logoWrapper { width: 100%; }
+  span.clickable { right: 22px; }
+  td.account { width: 15%; }
+  .accountAttribute::after { content: ""; }
+  .accountAttribute::before { content: "Minimum Deposit: "; color: rgb(91, 91, 91); }
+  .licenseDate { display: inline; }
+  #body-container { width: 86%; float: left; }
+  #header-container { width: 100%; min-width: 768px; }
+  .help-flyout { display: none; }
+  .logo { float: left; margin-left: 14px; clear: both; }
+  #ssn { width: 108%; }
+  .tools-container { width: 13%; margin-right: 1%; margin-top: 19px; float: right; padding: 8px; display: block; clear: both; }
+  .tools-container a:link, a.tools-container { display: block; }
+  :-moz-placeholder { font-size: 11px; }
+  *::-moz-placeholder { font-size: 11px; }
+  #dob, .step p { position: relative; }
+  .pnc-progress { width: 95%; }
+  .step p { display: inline; top: -18px; }
+  .row { margin-right: 0px; }
+  #dob { width: 137%; left: 10.5%; }
+  .col-md-1 { width: 11.3333%; padding-right: 1px; }
+  .progress-container, .progress-container-sa { margin-left: 15px; font-size: 9px; }
+} 221, 221); }
+#contact { display: none; }
+@media (min-width: 768px) {
+  .logoWrapper { width: 100%; }
+  #FN, #LN { width: 40%; }
+  #LN { position: relative; right: 30px; margin-right: 0px !important; }
+  #MI { position: relative; right: 33px; }
+  #SF { width: 89px; margin-left: -60px; }
+  #email { width: 153%; }
+  #confirmEmail { position: relative; right: 24px; }
+}
+@media only screen and (min-width: 775px) {
+  .logoWrapper { width: 100%; }
+  td#totalInitialDeposit { right: 73%; }
+}
+@media only screen and (min-width: 980px) {
+  .logoWrapper { width: 950px; margin-left: auto; margin-right: auto; }
+  #microDeposit2, #microDeposit1 { position: relative; left: 2%; top: 6px; height: 75%; }
+  .licenseDate select { width: 105%; }
+  .tools-container { width: 20%; }
+  input[name="verifyEmailAddress"] { position: relative; left: 3px; }
+  .tools-container { margin-right: 5%; margin-top: 19px; }
+  #body-container { width: 73%; }
+  #header-container { width: 100%; min-width: 975px; }
+  .printBox { display: inline; font-family: "PNC Sans"; font-weight: 700; font-size: 13px; }
+  #dob { width: 115%; position: relative; right: 88px; }
+  #contact { display: inline; }
+  .row { margin-right: 15px; }
+  .col-md-1 { width: 11.1%; }
+  .date { position: relative; left: 8px; }
+  input[type="text"], select, input[type="password"], input[type="tel"] { width: 100%; margin-bottom: 8px; margin-top: -7px; }
+  span.bodyText.fieldLabel { position: relative; bottom: 6px; }
+  span.bodyText { position: relative; bottom: 7px; }
+  #email { width: 100%; }
+  .streetAddr { width: 100%; }
+  .col-md-2.zip { width: 14%; }
+  .hint { display: inline; font-size: 9px; position: absolute; top: 36px; left: 27px; }
+  input[name="expirationMonth"], input[name="expirationYear"] { width: 14.5%; }
+  input[name="creditCardZipCode5"], input[name="creditCardZipCode4"] { width: 18.5%; }
+  #header-container { width: 100%; text-align: center; background-color: rgb(45, 57, 67); }
+}
+.AND_note, .btn-lt, .btn-rt { display: inline; }
+.AND_selectProduct { margin-bottom: 20px; }
+.btn-lt { margin-left: -10px; }
+#wizButtonsContainer .btn-lt { margin-left: 0px; }
+#mdForm { margin-bottom: 20px !important; }
+label.error { display: block; color: rgb(229, 63, 70); opacity: 1; }
+input.error, select.error { border: 1px solid rgb(229, 63, 70); }
+.accountName { color: #0E618B; font-size: 14px; font-weight: bold; font-family: "PNC Sans"; }
+.accountSummary { width: 95%; }
+.AND_note { font-size: 11px; padding-left: 10px; color: #0F628E; }
+@media only screen and (min-width: 980px) {
+  .logoWrapper { width: 950px; margin-left: auto; margin-right: auto; }
+  .logo { float: left; clear: both; }
+  .help-flyout:hover { width: 59px; height: 50px; }
+  #FN, #LN { width: 40%; }
+  #LN { position: relative; right: 30px; }
+  #MI { position: relative; right: 24px; }
+  #SF { width: 89px; margin-left: -52px; }
+  #email { width: 149%; }
+  #confirmEmail { position: relative; right: 24px; }
+  #centerer { width: 980px; margin: 0px auto; }
+  .tools-container { margin-right: 2%; margin-top: 19px; }
+}
+a#cancel-link { display: none; }
+* { margin: 0px; padding: 0px; }
+#centerer { min-height: 100%; }
+#outer-container { overflow-x: hidden; padding-bottom: 200px; }
+.footer { position: relative; margin-top: -200px; height: 200px; clear: both; }
+body::before { content: ""; height: 100%; float: left; width: 0px; margin-top: -32767px; }
+#centerer input:-moz-placeholder { color: rgb(91, 91, 91); }
+#centerer input::-moz-placeholder { color: black; }
+select.watermark, option { color: rgb(91, 91, 91); font-size: 11px; }
+select { padding-top: 1px; padding-bottom: 8px; }
+div.toolTipError { margin-top: 40px; }
